@@ -1,0 +1,369 @@
+:root {
+    --primary-color-1: rgb(255, 82, 191);
+    --neutral-color-1: rgb(235, 251, 255);
+    --neutral-color-2: rgb(0, 37, 46);
+    --neutral-color-3: rgb(128, 141, 153);
+
+    --font-size: 1.125rem;
+    --font-family-1: 'Open Sans', sans-serif;
+    --font-family-2: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family-1);
+    font-size: var(--font-size);
+}
+
+/* Header start */
+
+header {
+    background: var(--neutral-color-1) url(./images/bg-hero-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-bottom: 120px;
+}
+
+.head {
+    margin-bottom: 3.3rem;
+    padding: 2.2rem 2.2rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head img {
+    width: 50%;
+}
+
+.head button {
+    font-size: 14px;
+    padding: 0.67rem 1.33rem;
+    border: none;
+    border-radius: 1.33rem;
+    letter-spacing: .6px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 8%);
+}
+
+.hero {
+    padding: 2.2rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.11rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right img {
+    width: 100%;
+}
+
+.hero-left {
+    width: 80%;
+}
+
+.hero-left h1, .hero-left p {
+    margin-bottom: 1.33rem;
+}
+
+.hero-left button {
+    font-size: 14px;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    letter-spacing: .6px;
+    background-color: var(--primary-color-1);
+    box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 8%);
+    color: white;
+    width: 60%;
+}
+
+/* Main start */
+
+
+    main {
+        margin-bottom: 60px;
+    }
+
+    main .container {
+        background-color: rgb(255, 255, 255);
+        padding: 40px 40px 40px 80px;
+        margin: 30px;
+        border-radius: 20px;
+        box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 8%);
+
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    main .container img {
+        width: 80%;
+        margin-left: auto;
+    }
+
+    main .container p {
+        width: 80%;
+    }
+
+    main .container h2 {
+        margin-bottom: 20px;
+    }
+
+    /* Aside start */
+
+    aside {
+        text-align: center;
+        background-color: white;
+        width: 50%;
+        margin: 0 auto;
+        padding: 60px;
+        border-radius: 20px;
+        box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 8%);
+        position: relative;
+        top: 80px;
+    }
+
+    aside button {
+        font-size: 14px;
+        padding: 1rem 1.5rem;
+        border: none;
+        border-radius: 1.5rem;
+        letter-spacing: .6px;
+        background-color: var(--primary-color-1);
+        box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 8%);
+        color: white;
+        margin-top: 24px;
+        width: 50%;
+    }
+
+
+    /* Footer start */
+
+    footer {
+        background-color: var(--neutral-color-2);
+        /* height: 60vh; */
+    }
+
+    .footer-top {
+        margin: 10px;
+        padding: 100px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .logo-text {
+        display: grid;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo-text div {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .logo-text p {
+        font-size: 14px;
+        color: white;
+    }
+
+    .white-logo img {
+        margin-bottom: 30px;
+    }
+
+    .two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .two p {
+        color: white;
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .logos img {
+        width: 40%;
+    }
+
+    .footer-bottom {
+        text-align: end;
+        color: white;
+        padding-bottom: 40px;
+        margin-right: 60px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:900px) {
+    /* Header start */
+
+    .head {
+        padding: 2.2rem .9rem;
+    }
+
+    .head button {
+        font-size: 13px;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .hero-left h1,
+    .hero-left p {
+        margin-bottom: 32px;
+    }
+
+    .hero-left button {
+        width: 80%;
+    }
+
+
+    /* Main start */
+    
+    main .container {
+        display: flex;
+        flex-direction: column-reverse;
+
+        padding: 20px 20px 20px 40px;
+        margin: 30px 16px 30px 16px;
+    }
+
+    main .container p, main .container h2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    main .container p {
+        font-size: 16px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    main .container img {
+        width: 100%;
+    }
+
+
+    /* Aside start */
+
+    aside {
+        width: 90%;
+        padding: 20px;
+    }
+
+    aside button {
+        width: 80%;
+    }
+
+    aside h2 {
+        font-size: 18px;
+    }
+
+
+    /* Footer start */
+
+    footer {
+        width: 100%;
+    }
+
+    .footer-top {
+        margin: 40px;
+        /* padding: 30px; */
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: end;
+        align-items: center;
+        /* gap: 100px; */
+    }
+
+    .white-logo img {
+        width: 80%;
+    }
+
+    .logo-text {
+        display: grid;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .two {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: start;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .two p {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin: 0;
+    }
+}
